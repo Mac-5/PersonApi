@@ -19,18 +19,18 @@ Description: Create a new person.
 Request Format:
 
 ```json
-Copy code
 {
   "name": "John",
   "email": "john@gmail.com"
-}
+}```
+
 Response Format:
 ```json
 {
   "id": 1,
   "name": "John",
   "email": "john@gmail.com"
-}
+}```
 
 ##Get Person by ID:
 
@@ -43,7 +43,7 @@ Response Format:
   "id": 1,
   "name": "John",
   "email": "john@gmail.com"
-}
+}```
 
 ##Update Person:
 
@@ -54,7 +54,7 @@ Request Format:
 ```json
 {
   "first_name": "John"
-}
+}```
 
 Response Format:
 ```json
@@ -63,7 +63,7 @@ Response Format:
   "id": 1,
   "name": "John",
   "email": ""
-}
+}```
 
 ##Delete Person:
 
@@ -73,7 +73,7 @@ Response Format:
 ```json
 {
   "message": "Person  has been deleted."
-}
+}```
 
 #Usage
 You can use the PERSON REST API to manage persons in your application. Below are some sample usages:
@@ -87,7 +87,7 @@ Content-Type: application/json
   "id": 1,
   "name": "John",
   "email": "john@gmail.com"
-}
+}```
 2. Get Person by ID:
 http
 GET /api/1
@@ -98,9 +98,9 @@ http
 PUT /api/1
 Content-Type: application/json
 
-{
+```{
   "first_name": "Jane"
-}
+}```
 4. Delete Person:
 
 http
