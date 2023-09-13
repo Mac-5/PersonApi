@@ -127,7 +127,9 @@ func (pc *PersonController) DeletePerson(c *gin.Context){
 		return 
 	}
 
-	c.JSON(http.StatusNoContent, nil)
+	c.JSON(http.StatusNoContent, gin.H{
+		"message": "The Person Has been deleted",
+	})
 
 
 }
