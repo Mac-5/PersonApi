@@ -1,8 +1,8 @@
-#PERSON REST API
+# PERSON REST API
 
 The PERSON REST API is a simple API that allows you to perform CRUD operations on the "Person" resource. It provides endpoints for creating, retrieving, updating, and deleting persons. This document provides an overview of the API, how to use it, and how to set it up for local development or deployment.
 
-#Table of Contents
+# Table of Contents
 1. Endpoints
 2. Usage
 3. Setup
@@ -12,7 +12,7 @@ The PERSON REST API is a simple API that allows you to perform CRUD operations o
 
 The API offers the following endpoints:
 
-##Create a New Person:
+## Create a New Person:
 
 Endpoint: POST /api/
 Description: Create a new person.
@@ -32,7 +32,7 @@ Response Format:
   "email": "john@gmail.com"
 }```
 
-##Get Person by ID:
+## Get Person by ID:
 
 Endpoint: GET /api/{id}
 Description: Retrieve details of a person by their ID.
@@ -45,7 +45,7 @@ Response Format:
   "email": "john@gmail.com"
 }```
 
-##Update Person:
+## Update Person:
 
 Endpoint: PUT /api/{id}
 Description: Update details of an existing person.
@@ -65,7 +65,7 @@ Response Format:
   "email": ""
 }```
 
-##Delete Person:
+## Delete Person:
 
 Endpoint: DELETE /api/{id}
 Description: Remove a person by their ID.
@@ -83,7 +83,7 @@ http
 POST /api/
 Content-Type: application/json
 
-{
+```json{
   "id": 1,
   "name": "John",
   "email": "john@gmail.com"
@@ -98,7 +98,7 @@ http
 PUT /api/1
 Content-Type: application/json
 
-```{
+```json{
   "first_name": "Jane"
 }```
 4. Delete Person:
@@ -134,8 +134,8 @@ The API will be accessible at [Link Text] http://localhost:PORT, where PORT is t
 
 For deployment instructions and additional information, please refer to the API Documentation.
 
-#Contributing
+# Contributing
 Contributions to this API are welcome! If you have ideas for improvements or new features, please open an issue or submit a pull request.
 
-#License
+# License
 This project is licensed under the MIT License. Feel free to use and modify the code as needed.
