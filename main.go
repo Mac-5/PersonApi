@@ -14,7 +14,7 @@ import (
 	"github.com/Mac-5/services"
 	"github.com/gin-gonic/gin"
 
-	//"github.com/joho/godotenv"
+	github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )
 
