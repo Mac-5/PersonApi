@@ -6,22 +6,26 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"os"
+	"fmt"
 
-	// "os"
-	 "fmt"
 	"github.com/Mac-5/controllers"
 	"github.com/Mac-5/routes"
 	"github.com/Mac-5/services"
 	"github.com/gin-gonic/gin"
 
-	//github.com/joho/godotenv"
+	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )
 
 
 func createDBConnection()(*sql.DB, error){
-	
-	connectionString := "postgres://admin:HLf8mi6V44obIvk5lHzuE7ay6QjT23fb@dpg-ck0oohb6fquc738ue2cg-a.frankfurt-postgres.render.com/admin_pn1t"
+	if err := godotenv.Load(); err != nil {
+        fmt.Println("Error loading .env file")
+        os.Exit(1)
+    }
+	connectionStringURL := os.Getenv("CONNECTIONSTRING")
+	connectionString := connectionStringURL
 
     // Parse the URL
     u, err := url.Parse(connectionString)
