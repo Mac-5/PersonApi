@@ -7,6 +7,7 @@ The PERSON REST API is a simple API that allows you to perform CRUD operations o
   - [Table of Contents](#table-of-contents)
   - [Endpoints](#endpoints)
     - [Create a New Person](#create-a-new-person)
+    - [Get All Persons](#get-all-persons)
   - [Setup](#setup)
   - [Contributing](#contributing)
   - [License](#license)
@@ -17,7 +18,30 @@ The API offers the following endpoints:
 
 ### Create a New Person
 
-- **Endpoint:** POST /api/
+- **Endpoint:** POST  [https://person-crud-api-bdzs.onrender.com/api](https://person-crud-api-bdzs.onrender.com/api)
+- **Description:** Create a new person.
+- **Request Format:**
+
+
+```json
+{
+  "name": "John",
+  "email": "john@gmail.com"
+}
+```
+
+- **Response Format:**
+  
+```json
+{
+  "id": 1,
+  "name": "John",
+  "email": "john@gmail.com"
+}
+```
+### Get All Persons
+
+- **Endpoint:** GET  [https://person-crud-api-bdzs.onrender.com/api](https://person-crud-api-bdzs.onrender.com/api)
 - **Description:** Create a new person.
 - **Request Format:**
 
@@ -39,7 +63,7 @@ The API offers the following endpoints:
 }
 ```
 **Get Person by ID**
--**Endpoint:** GET /api/{id}
+-**Endpoint:** GET  [https://person-crud-api-bdzs.onrender.com/api/{id}](https://person-crud-api-bdzs.onrender.com/api/{id})
 -**Description**: Retrieve details of a person by their ID.
 -**Response Format**
 ```json
@@ -50,7 +74,7 @@ The API offers the following endpoints:
 }
 ```
 **Update Person**
--**Endpoint**: PUT /api/{id}
+-**Endpoint**: PUT  [https://person-crud-api-bdzs.onrender.com/api/{id}](https://person-crud-api-bdzs.onrender.com/api/{id})
 -**Description**: Update details of an existing person.
 -**Request Format**:
 ```json
@@ -67,7 +91,7 @@ The API offers the following endpoints:
 }
 ```
 **Delete Person**
-**Endpoint:** DELETE /api/{id}**
+**Endpoint:** DELETE  [https://person-crud-api-bdzs.onrender.com/api/{id}](https://person-crud-api-bdzs.onrender.com/api/{id})
 Description:** Remove a person by their ID.
 **Response Format:**
 
@@ -82,7 +106,7 @@ You can use the PERSON REST API to manage persons in your application. Below are
 
 *Create a New Person:*
 
-POST /api/
+POST  [https://person-crud-api-bdzs.onrender.com/api](https://person-crud-api-bdzs.onrender.com/api)
 Content-Type: application/json
 
 ```json
@@ -93,11 +117,13 @@ Content-Type: application/json
 }
 ```
 
+*Get all Persons:*
+GET  [https://person-crud-api-bdzs.onrender.com/api](https://person-crud-api-bdzs.onrender.com/api)
 *Get Person by ID:*
-GET /api/1
+GET  [https://person-crud-api-bdzs.onrender.com/api/{id}](https://person-crud-api-bdzs.onrender.com/api/{id})
 
 *Update Person:*
-PUT /api/1
+PUT  [https://person-crud-api-bdzs.onrender.com/api/{id}](https://person-crud-api-bdzs.onrender.com/api/{id})
 Content-Type: application/json
 ```json
 
@@ -107,7 +133,7 @@ Content-Type: application/json
 
 ```
 *Delete Person:*
-DELETE /api/1
+DELETE  [https://person-crud-api-bdzs.onrender.com/api/{id}](https://person-crud-api-bdzs.onrender.com/api/{id})
 
 For more detailed information on request and response formats, please refer to the API Documentation.
 
